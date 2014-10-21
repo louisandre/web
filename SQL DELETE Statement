@@ -1,0 +1,1 @@
+DELETE FROM `table` WHERE `comment_author_IP`='66.117.8.34'
