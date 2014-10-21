@@ -1,0 +1,5 @@
+SELECT 
+ TABLE_NAME,
+ CONCAT(ROUND(((DATA_LENGTH + INDEX_LENGTH - DATA_FREE) / 1024 / 1024), 2), 'Mo') AS TailleMo 
+FROM information_schema.TABLES 
+WHERE TABLE_SCHEMA = 'nom_base_de_donnees'
